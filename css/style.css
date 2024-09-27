@@ -1,0 +1,295 @@
+:root{
+    /*Marron*/
+    --brown-color:#BC965C;
+    --dark-gey-color:#1B1B1B;
+    --grey-color:#58575D;
+    --light-grey:#f0eeee;
+    --red-color:#862149;
+    --light-red:#e774a2;
+    --white-color:#FFFFFF;
+}
+
+/*********************************************************
+----------------------------------------------------------
+METHOD BEM
+----------------------------------------------------------
+*********************************************************/
+
+html{
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    font-family: fredoka;
+}
+
+.container{
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.header__paiement{
+    background-color:var(--brown-color);
+    color: var(--white-color);
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header__paiement p {
+    padding: 1rem;
+}
+
+h1{
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: bold;
+    background-color:#FFFFFF;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+    font-family: Edu Australia VIC WA NT Hand Dots;
+}
+
+
+.header__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--brown-color);
+}
+
+.nav__container{
+    background-color: var(--dark-gey-color);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.nav__container img{
+    display: flex;
+    flex-direction: row;
+    width: 3rem;
+    height: 3rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+nav{
+    /*display: flex;
+    justify-content: space-around;*/
+    background-color: var(--dark-gey-color);
+    /*margin: 2rem;
+    padding: 2rem;*/
+    width: 80%;
+}
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--white-color);
+    padding: 1rem;
+}
+nav a:hover{
+    background-color: #FFFFFF;
+    color: var(--dark-gey-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.header__nav__bar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+
+article img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 15rem;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    padding: 1rem auto;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+/*.main__categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light-grey-color);
+    font-size: 1.25rem;
+    color: var(--brown-color);
+    border-radius: 0 1rem 0 0;
+    height:100%;
+
+}*/
+
+
+aside {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+main .main__gammes{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--red-color);
+    font-size: 1.5rem;
+    height: 100%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border-radius: 0 1rem 0 0;
+    
+}
+
+.main__gammes li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main__gammes li a{
+    text-decoration: none;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.main__gammes li a:hover{
+    color: var(--dark-gey-color);
+}
+
+main .main__articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article{
+    border: var(--dark-gey-color) solid 0.5rem;
+    border-color: var(--brown-color);
+    border-radius: 0.5rem;
+    border-color: var(--light-grey);
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    position: relative;
+    width: 20%;
+}
+
+.main__articles h2{
+    display: flex;
+    justify-content: flex-start;
+    font-family: Edu Australia VIC WA NT Hand Dots;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--brown-color);
+    border-bottom: solid 2px;
+    border-left: solid 2px;
+    border-color: var(--brown-color);
+    border-radius: 1rem;
+    padding: 0.50rem;
+}
+
+.articles__prix{
+    display: flex;
+    justify-content: center;
+    border: solid 3px;
+    border-color: var(--brown-color);
+    border-radius: 50%;
+    background-color: var(--light-grey-color);
+    height: 4.5rem;
+    width: 4.5rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color:var(--red-color);
+}
+
+.articles__prix p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+article p {
+    padding: 1rem;
+}
+
+.article__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+.articles__ajouter{
+    display: flex;
+    justify-content: center;
+    background-color: var(--brown-color);
+    margin-top: 1rem;
+    color: var(--white-color);
+}
+
+.articles__ajouter:hover{
+    background-color:var(--red-color);
+    color:var(--white-color);
+    font-weight: bold;
+    box-shadow:#9a9a9d 3px 3px 3px 3px;
+    
+}
+
+.footer__coordonnées{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 2rem;
+    background-color: var(--dark-gey-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white-color);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+footer a:hover {
+    padding: 1rem;
+    background-color: var(--white-color);
+    color: var(--dark-gey-color);
+    text-decoration: underline;
+}
